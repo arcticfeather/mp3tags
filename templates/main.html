@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>MP3 tags</title>
+	</head>
+	<body>
+		<h1>List of tags found</h1>
+		<h2>{{ mp3_list[0].artist[0] }}</h2>
+		<h3>{{ mp3_list[0].album[0] }}</h3>
+		<p><a href="{{ art_filename }}"><img src="{{ art_filename }}" height="200px" width="200px"></a><br/>{{ image_size[0] }} x {{ image_size[1] }}</p>
+			{% for mp3 in mp3_list %}
+				{{ mp3.title[0] }}</br>
+			{% endfor %}
+	</body>
+</html>
